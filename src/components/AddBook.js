@@ -29,7 +29,7 @@ const AddBook = () => {
     const newBook = { title, author, publishYear, price, genre };
 
     try {
-      const response = await axios.post('http://localhost:5000/add', newBook);
+      const response = await axios.post('https://book-management-app-36qt.onrender.com/add', newBook);
       setMessage({ type: 'success', text: response.data.message });
 
       setTitle('');

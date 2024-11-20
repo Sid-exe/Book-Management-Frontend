@@ -12,7 +12,7 @@ const ViewBooks = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/books')  
+      .get('https://book-management-app-36qt.onrender.com/books')  
       .then((response) => {
         setBooks(response.data); 
         setLoading(false); 
@@ -29,7 +29,7 @@ const ViewBooks = () => {
     const confirmDelete = window.confirm('Are you sure you want to delete this book?');
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:5000/books/${id}/delete`)  // Backend endpoint to delete book by ID
+        .delete(`https://book-management-app-36qt.onrender.com/books/${id}/delete`)  // Backend endpoint to delete book by ID
         .then((response) => {
           setBooks(books.filter((book) => book._id !== id));
           alert('Book deleted successfully');

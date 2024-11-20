@@ -20,7 +20,7 @@ const UpdateBook = () => {
  
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/books/${id}`) // Backend endpoint to get book by ID
+      .get(`https://book-management-app-36qt.onrender.com/books/${id}`) // Backend endpoint to get book by ID
       .then((response) => {
         setBook(response.data); 
         setLoading(false); 
@@ -54,7 +54,7 @@ const UpdateBook = () => {
     };
 
     axios
-      .put(`http://localhost:5000/books/${id}/update`, updatedBookData) 
+      .put(`https://book-management-app-36qt.onrender.com/books/${id}/update`, updatedBookData) 
       .then((response) => {
         
         setMessage('Book updated successfully!'); 
