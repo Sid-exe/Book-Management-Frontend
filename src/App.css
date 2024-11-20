@@ -36,3 +36,198 @@
     transform: rotate(360deg);
   }
 }
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f1eb;
+  color: #3e2723; 
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.app-header {
+  background-color: #6d4c41; 
+  color: #ffffff; 
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+
+.app-nav {
+  background-color: #a1887f; 
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.app-nav li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff; 
+  background-color: #795548; 
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #5d4037; 
+}
+
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.app-footer {
+  background-color: #6d4c41;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+
+button {
+  background-color: #795548;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5d4037;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.book-list li {
+  background-color: #d7ccc8; 
+  border: 1px solid #a1887f; 
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+.book-list li h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #3e2723; 
+}
+
+
+.book-list li button,
+.book-list li a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  text-decoration: none; 
+}
+
+
+form {
+  background-color: #d7ccc8; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  max-width: 500px; 
+  margin: 20px auto; 
+}
+
+/* Form inputs and textareas */
+form input,
+form textarea,
+form select {
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0; 
+  border: 1px solid #a1887f; 
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f4f1eb; 
+  color: #3e2723; 
+  transform: translateX(-10px); 
+}
+
+/* Form labels */
+form label {
+  font-weight: bold;
+  color: #3e2723;
+  display: block; 
+  margin-bottom: 5px;
+}
+
+
+form button {
+  background-color: #6d4c41;
+  color: #ffffff; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+form button:hover {
+  background-color: #5d4037; 
+}
+
+form button:active {
+  transform: scale(0.98); 
+}
+
+
+.error-message {
+  color: #d32f2f; /* Red for error messages */
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
